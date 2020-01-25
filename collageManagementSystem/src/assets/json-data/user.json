@@ -1,0 +1,17 @@
+[
+    {
+      "email": "abc.com",
+      "password": "1234",
+      "role":0
+    },
+    {
+        "email": "xyz.com",
+        "password": "1234",
+        "role":1
+    },
+    {
+        "email": "qwe.com",
+        "password": "1234",
+        "role":2
+    }
+]

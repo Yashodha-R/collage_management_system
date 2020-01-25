@@ -1,0 +1,93 @@
+
+
+<ion-app>
+    <ion-header>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+              </ion-buttons>
+          <ion-title>dashboard</ion-title>
+        </ion-toolbar>
+      </ion-header>  
+    <!-- <ion-split-pane  contentId="main-content" menuId="dashboardMenu">
+      <ion-menu contentId="main-content" type="overlay">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-list>
+            <ion-menu-toggle auto-hide="false" *ngFor="let p of dashboardPages">
+              <ion-item [routerDirection]="" [routerLink]="[p.url]">
+                <ion-icon slot="start" [name]="p.icon"></ion-icon>
+                <ion-label>
+                  {{p.title}}
+                </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          </ion-list>
+        </ion-content>
+      </ion-menu>
+    </ion-split-pane> -->
+    <ion-content class="dashboard-container">
+        <ion-grid>
+            <ion-row>
+              <ion-col>
+                  <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                          <ion-card>
+                              <ion-card-header>
+                                <ion-card-title>Course</ion-card-title>
+                              </ion-card-header>
+                              <ion-card-content>
+                              </ion-card-content>
+                            </ion-card>
+                      </ion-col>
+                      <ion-col>
+                          <ion-card>
+                              <ion-card-header>
+                                  <ion-select placeholder="Select One">
+                                      <ion-select-option value="attendance" selected>Attendance</ion-select-option>
+                                      <ion-select-option value="course">course</ion-select-option>
+                                    </ion-select>
+                              </ion-card-header>
+                              <ion-card-content>
+                              </ion-card-content>
+                            </ion-card>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-card>
+                                <ion-card-header>
+                                  <ion-card-title>Calender</ion-card-title>
+                                </ion-card-header>
+                                <ion-card-content>
+                                    <ion-list>
+                                        <ion-item *ngFor="let event of calenderEvent" class="event-list">
+                                          <div class="date">{{event.date}}</div>
+                                          <div class="date">{{event.event}}</div>
+                                        </ion-item>
+                                      </ion-list>
+                                </ion-card-content>
+                              </ion-card>
+                        </ion-col>
+                      </ion-row>
+                </ion-grid>
+              </ion-col>
+              <ion-col>
+                    <div>
+                        <mat-tab-group>
+                            <mat-tab label="First">
+                              <div #chart id="chart" (window:resize)="onResize($event)"></div>
+                            </mat-tab>
+                            <mat-tab label="Second"> Content 2 </mat-tab>
+                          </mat-tab-group>
+                    </div>
+              </ion-col>
+            </ion-row>
+            </ion-grid>
+      </ion-content>
+  </ion-app>

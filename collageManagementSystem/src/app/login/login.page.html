@@ -1,0 +1,26 @@
+<ion-content>
+  <div class="login-container">
+     <div class="login-title">
+         <h1>Login</h1>
+         <p>Hello! Log in with your email</p>
+     </div>
+    
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+      <div>
+        <label>
+          Email address:
+        </label>
+        <input class="input-box" type="email" formControlName="email" />
+      </div>
+
+      <div>
+        <label>
+          Password:
+        </label>
+        <input class="input-box" type="password" formControlName="password" />
+      </div>
+
+      <button type="submit" class="submit">LOG IN</button>
+    </form>
+  </div>
+</ion-content>

@@ -1,0 +1,36 @@
+.login-container {
+  // background-color: #f9f3f3;
+  width: 50%;
+  padding: 20px;
+  border-radius: 3px;
+  margin: auto;
+  margin-top: 5%;
+
+  .login-title {
+    text-align: center;
+  }
+
+  .input-box {
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    height: 30px;
+    background: #f9f4f4;
+    margin: 10px 0 25px;
+    padding: 10px;
+  }
+
+  .submit{
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    height: 30px;
+    background: #c7c3c3;
+    margin: 10px 0 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+  }
+
+
+}
